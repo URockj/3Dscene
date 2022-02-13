@@ -54,7 +54,7 @@ body, html {
 	height: 100%;
 	position: relative;
 	color: #fff;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .showcase::before {
@@ -126,6 +126,10 @@ body, html {
 	color: var(--accent);
 }
 
+.showcase-carousel .swiper-wrapper {
+	transition: var(--transition);
+}
+
 .showcase-carousel__item {
 	position: relative;
 	height: calc(100vh - var(--padding)*2);
@@ -157,7 +161,7 @@ body, html {
 
 .showcase-carousel__item.swiper-slide-active {
 	opacity: .8;
-	transform: scale(.98);
+	transform: scale(1);
 }
 
 .showcase-carousel__image-wrapper > * {
