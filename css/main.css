@@ -155,13 +155,17 @@ body, html {
 	width: 100%;
 	font-family: assasin-st, sans-serif;
 	font-size: 32px;
-	color: rgba(255, 255, 255, .5);
-	text-shadow: rgb(58, 78, 94) 0 0 10px;
+	color: rgba(255, 255, 255, .5);	
 }
 
 .showcase-carousel__item.swiper-slide-active {
-	opacity: .8;
+	opacity: .7;
 	transform: scale(1);
+}
+
+.showcase-carousel__item.swiper-slide-active:hover{
+	opacity: 1;
+	transform: scale(1.1, 1.1);
 }
 
 .showcase-carousel__image-wrapper > * {
@@ -179,6 +183,14 @@ body, html {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.showcase-carousel__image a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
 }
 
 .showcase-carousel__image-left {
@@ -206,7 +218,6 @@ body, html {
 .showcase-navigation {
 	overflow: hidden;
 	position: absolute;
-	z-index: 2;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -215,8 +226,9 @@ body, html {
 
 .showcase-navigation > * {
 	position: absolute;
+	z-index: 2;
 	height: 100%;
-	width: 50%;
+	width: 30%;
 	outline: none;
 	cursor: pointer;
 }
@@ -232,18 +244,18 @@ body, html {
 	transition: opacity .75s ease-out;
 	position: absolute;
 	transform: rotate(-90deg);
-	left: 50%;
+	left: 20%;
 	top: 10%;
-	font-size: 45px;
+	font-size: 55px;
 }
 
 .showcase-navigation > *:hover::before {
-	opacity: .25;
+	opacity: .4;
 }
 
 .showcase-navigation__next::before {
 	transform: rotate(90deg);
-	right: 50%;
+	right: 20%;
 	left: auto;
 }
 
